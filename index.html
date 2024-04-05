@@ -3,31 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Escolha dos Acompanhantes</title>
+<title>Página Inicial</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Escolha dos Acompanhantes</h1>
-<form id="formEscolha">
-    <label for="selectAcompanhante">Escolha o Acompanhante:</label>
-    <select id="selectAcompanhante" name="acompanhante">
-        <option value="George">George</option>
-        <option value="Alysson">Alysson</option>
-        <option value="Gutemberg">Gutemberg</option>
-        <option value="Rose">Rose</option>
-        <option value="Rafael">Rafael</option>
-        <option value="Lucas">Lucas</option>
-        <option value="André">André</option>
-    </select>
-    <label for="inputDiaMes">Digite o Dia do Mês:</label>
-    <input type="number" id="inputDiaMes" name="diaMes" min="5" max="30">
-    <label for="selectTurno">Escolha o Turno:</label>
-    <select id="selectTurno" name="turno">
-        <option value="Manhã">Manhã</option>
-        <option value="Tarde">Tarde</option>
-        <option value="Noite">Noite</option>
-    </select>
-    <input type="submit" value="Salvar Escolha">
-</form>
-<script src="escolha.js"></script>
+    <header>
+        <h1>Bem-vindo à Página Inicial</h1>
+        <!-- Aqui você pode adicionar outros elementos do cabeçalho, como menu de navegação, etc. -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="tabela-acompanhantes.html">Ver Tabela de Acompanhantes</a></li>
+            <!-- Adicione outros links de navegação aqui, se necessário -->
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Conteúdo principal da página -->
+        <p>Seu conteúdo principal aqui.</p>
+        <!-- Insira o link para a tabela de acompanhantes abaixo -->
+        <a href="tabela-acompanhantes.html">Ver Tabela de Acompanhantes</a>
+    </main>
+
+    <footer>
+        <p>Rodapé da página.</p>
+    </footer>
 </body>
 </html>
