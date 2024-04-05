@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela de Acompanhantes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Escolha os Acompanhantes</h2>
+    <table id="tabelaEscolha">
+        <tr>
+            <th>Nome do Acompanhante</th>
+            <th>Dia da Semana</th>
+            <th>Dia do Mês</th>
+            <th>Turno</th>
+        </tr>
+        <tr>
+            <td>George</td>
+            <td>Segunda</td>
+            <td>4</td>
+            <td>Manhã</td>
+        </tr>
+        <tr>
+            <td>Alysson</td>
+            <td>Terça</td>
+            <td>5</td>
+            <td>Manhã</td>
+        </tr>
+        <tr>
+            <td>Gutemberg</td>
+            <td>Quarta</td>
+            <td>6</td>
+            <td>Tarde</td>
+        </tr>
+        <tr>
+            <td>Rose</td>
+            <td>Quinta</td>
+            <td>7</td>
+            <td>Tarde</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Sexta</td>
+            <td>8</td>
+            <td>Noite</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>Sábado</td>
+            <td>9</td>
+            <td>Noite</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>Domingo</td>
+            <td>10</td>
+            <td>Manhã</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Tabela de Acompanhantes Selecionados</h2>
+    <table id="tabelaAcompanhantes">
+        <tr>
+            <th>Nome do Acompanhante</th>
+            <th>Dia da Semana</th>
+            <th>Dia do Mês</th>
+            <th>Turno</th>
+        </tr>
+    </table>
+</div>
+<script src="filtro.js"></script>
+</body>
+</html>
 
