@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="container">
-    <h2>Tabela de Acompanhantes</h2>
-    <table id="tabelaAcompanhantes">
+    <h2>Escolha os Acompanhantes</h2>
+    <table id="tabelaEscolha">
         <tr>
             <th>Nome do Acompanhante</th>
             <th>Dia da Semana</th>
@@ -59,6 +59,33 @@
             <td>Manhã</td>
         </tr>
     </table>
+    <br>
+    <h2>Tabela de Acompanhantes Selecionados</h2>
+    <table id="tabelaAcompanhantes">
+        <tr>
+            <th>Nome do Acompanhante</th>
+            <th>Dia da Semana</th>
+            <th>Dia do Mês</th>
+            <th>Turno</th>
+        </tr>
+    </table>
 </div>
+<script>
+document.getElementById('tabelaEscolha').addEventListener('click', function(e) {
+    if (e.target.tagName === 'TD') {
+        let nome = e.target.innerText;
+        let diaSemana = e.target.parentElement.children[1].innerText;
+        let diaMes = e.target.parentElement.children[2].innerText;
+        let turno = e.target.parentElement.children[3].innerText;
+
+        let tabelaAcompanhantes = document.getElementById('tabelaAcompanhantes');
+        let novaLinha = tabelaAcompanhantes.insertRow(-1);
+        novaLinha.insertCell(0).innerText = nome;
+        novaLinha.insertCell(1).innerText = diaSemana;
+        novaLinha.insertCell(2).innerText = diaMes;
+        novaLinha.insertCell(3).innerText = turno;
+    }
+});
+</script>
 </body>
 </html>
